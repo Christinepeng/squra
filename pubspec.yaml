@@ -1,0 +1,34 @@
+name: squra
+description: Make any photo square with adjustable borders (Squaready-like).
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0   # 保持你現有設定；若相依衝突，可改成 ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # 選圖（相簿/相機）
+  image_picker: ^1.2.0
+
+  # 權限（Android 13+ 照片權限、舊版 Storage）
+  permission_handler: ^12.0.1
+
+  # 顏色選擇器（自訂背景色）
+  flutter_colorpicker: ^1.1.0
+
+  # 存圖到相簿（相容 AGP 8）
+  gal: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
